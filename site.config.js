@@ -1,26 +1,30 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "morethanmin",
+    name: "mung3477",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "I develop everything using node.",
-    email: "morethanmin.dev@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
-    instagram: "",
+    role: "frontend developer & AI researcher",
+    bio: "I like immediate visual feedbacks.",
+    email: "mung3477@korea.ac.kr",
+    linkedin: "mung3477",
+    github: "mung3477",
+    instagram: "mung3477",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `ARA`,
+      href: "https://aradatabase-ba6d4.web.app/",
     },
+    {
+      name: "FLAMEL",
+      href: "https://flamel.app/"
+    }
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
-    scheme: "dark", // 'light' | 'dark' | 'system'
+    title: "mung3477-dev",
+    description: "Hello world!",
+    scheme: "system", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
@@ -69,7 +73,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  revalidateTime: 600, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
