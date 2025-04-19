@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 
 const NavBar: React.FC = () => {
   // const links = [{ id: 1, name: "About", to: "/about" }]
-  const links = []
+  const links: Link[] = []
   return (
     <StyledWrapper className="">
       <ul>
@@ -19,6 +19,12 @@ const NavBar: React.FC = () => {
 }
 
 export default NavBar
+
+interface Link {
+  id: number;
+  name: string;
+  to: string
+}
 
 const StyledWrapper = styled.div`
   flex-shrink: 0;
