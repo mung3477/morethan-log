@@ -1,6 +1,8 @@
-import styled from "@emotion/styled"
 import React from "react"
+
 import { Emoji } from "src/components/Emoji"
+
+import styled from "@emotion/styled"
 
 type Props = {}
 
@@ -45,7 +47,7 @@ const StyledWrapper = styled.div`
     > .text {
       font-size: 1.875rem;
       line-height: 2.25rem;
-      color: ${({ theme }) => theme.colors.gray11};
+      color: ${({ theme }) => theme.colors.sand11};
     }
   }
 `

@@ -1,5 +1,7 @@
-import { CONFIG } from "site.config"
 import React from "react"
+
+import { CONFIG } from "site.config"
+
 import styled from "@emotion/styled"
 
 const d = new Date()
@@ -31,6 +33,6 @@ const StyledWrapper = styled.div`
     margin-top: 0.75rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    color: ${({ theme }) => theme.colors.gray10};
+    color: ${({ theme }) => theme.colors.sand10};
   }
 `

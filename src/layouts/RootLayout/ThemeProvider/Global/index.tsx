@@ -1,10 +1,6 @@
 import { guggenheim } from "src/assets"
 
-import {
-  css,
-  Global as _Global,
-  useTheme,
-} from "@emotion/react"
+import { Global as _Global, css, useTheme } from "@emotion/react"
 
 export const Global = () => {
   const theme = useTheme()
@@ -15,8 +11,8 @@ export const Global = () => {
         body {
           margin: 0;
           padding: 0;
-          color: ${theme.colors.gray12};
-          background-color: ${theme.colors.gray2};
+          color: ${theme.colors.sand12};
+          background-color: ${theme.colors.sand2};
           font-family: ${guggenheim.style.fontFamily};
           font-weight: ${guggenheim.style.fontWeight};
           font-style: ${guggenheim.style.fontStyle};
@@ -74,7 +70,7 @@ export const Global = () => {
           width: 100%;
           border: none;
           margin: 0;
-          border-top: 1px solid ${theme.colors.gray6};
+          border-top: 1px solid ${theme.colors.sand6};
         }
       `}
     />

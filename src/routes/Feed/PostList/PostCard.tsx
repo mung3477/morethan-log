@@ -1,11 +1,13 @@
+import Image from "next/image"
 import Link from "next/link"
 import { CONFIG } from "site.config"
 import { formatDate } from "src/libs/utils"
+
+import styled from "@emotion/styled"
+
+import Category from "../../../components/Category"
 import Tag from "../../../components/Tag"
 import { TPost } from "../../../types"
-import Image from "next/image"
-import Category from "../../../components/Category"
-import styled from "@emotion/styled"
 
 type Props = {
   data: TPost
@@ -32,7 +34,11 @@ const PostCard: React.FC<Props> = ({ data }) => {
             />
           </div>
         )}
-        <div data-thumb={!!data.thumbnail} data-category={!!category} className="content">
+        <div
+          data-thumb={!!data.thumbnail}
+          data-category={!!category}
+          className="content"
+        >
           <header className="top">
             <h2>{data.title}</h2>
           </header>
@@ -68,7 +74,7 @@ const StyledWrapper = styled(Link)`
     margin-bottom: 1.5rem;
     border-radius: 1rem;
     background-color: ${({ theme }) =>
-      theme.scheme === "light" ? "white" : theme.colors.gray4};
+      theme.scheme === "light" ? "white" : theme.colors.sand4};
     transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
@@ -91,7 +97,7 @@ const StyledWrapper = styled(Link)`
     > .thumbnail {
       position: relative;
       width: 100%;
-      background-color: ${({ theme }) => theme.colors.gray2};
+      background-color: ${({ theme }) => theme.colors.sand2};
       padding-bottom: 66%;
 
       @media (min-width: 1024px) {
@@ -138,7 +144,7 @@ const StyledWrapper = styled(Link)`
         .content {
           font-size: 0.875rem;
           line-height: 1.25rem;
-          color: ${({ theme }) => theme.colors.gray10};
+          color: ${({ theme }) => theme.colors.sand10};
           @media (min-width: 768px) {
             margin-left: 0;
           }
@@ -149,7 +155,7 @@ const StyledWrapper = styled(Link)`
         p {
           display: none;
           line-height: 2rem;
-          color: ${({ theme }) => theme.colors.gray11};
+          color: ${({ theme }) => theme.colors.sand11};
 
           @media (min-width: 768px) {
             display: block;

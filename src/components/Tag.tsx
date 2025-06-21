@@ -1,6 +1,8 @@
-import styled from "@emotion/styled"
-import { useRouter } from "next/router"
 import React from "react"
+
+import { useRouter } from "next/router"
+
+import styled from "@emotion/styled"
 
 type Props = {
   children: string
@@ -30,7 +32,7 @@ const StyledWrapper = styled.div`
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.gray10};
-  background-color: ${({ theme }) => theme.colors.gray5};
+  color: ${({ theme }) => theme.colors.sand10};
+  background-color: ${({ theme }) => theme.colors.sand5};
   cursor: pointer;
 `

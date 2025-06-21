@@ -1,6 +1,8 @@
-import styled from "@emotion/styled"
-import { useRouter } from "next/router"
 import React from "react"
+
+import { useRouter } from "next/router"
+
+import styled from "@emotion/styled"
 
 type TOrder = "asc" | "desc"
 
@@ -46,12 +48,12 @@ const StyledWrapper = styled.div`
   line-height: 1.25rem;
   a {
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.gray10};
+    color: ${({ theme }) => theme.colors.sand10};
 
     &[data-active="true"] {
       font-weight: 700;
 
-      color: ${({ theme }) => theme.colors.gray12};
+      color: ${({ theme }) => theme.colors.sand12};
     }
   }
 `

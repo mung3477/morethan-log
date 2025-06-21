@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { CONFIG } from "site.config"
+
 import styled from "@emotion/styled"
 
 const Logo = () => {
@@ -12,4 +13,7 @@ const Logo = () => {
 
 export default Logo
 
-const StyledWrapper = styled(Link)``
+const StyledWrapper = styled(Link)`
+  font-weight: 900;
+  font-size: 36px;
+`

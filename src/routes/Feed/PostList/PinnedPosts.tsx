@@ -1,9 +1,12 @@
-import PostCard from "src/routes/Feed/PostList/PostCard"
 import React, { useMemo } from "react"
-import usePostsQuery from "src/hooks/usePostsQuery"
-import styled from "@emotion/styled"
-import { filterPosts } from "./filterPosts"
+
 import { DEFAULT_CATEGORY } from "src/constants"
+import usePostsQuery from "src/hooks/usePostsQuery"
+import PostCard from "src/routes/Feed/PostList/PostCard"
+
+import styled from "@emotion/styled"
+
+import { filterPosts } from "./filterPosts"
 
 type Props = {
   q: string
@@ -47,7 +50,7 @@ const StyledWrapper = styled.div`
     margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.gray6};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.sand6};
   }
   .header {
     display: flex;

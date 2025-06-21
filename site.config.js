@@ -17,12 +17,12 @@ const CONFIG = {
     },
     {
       name: "FLAMEL",
-      href: "https://flamel.app/"
-    }
+      href: "https://flamel.app/",
+    },
   ],
   // blog setting (required)
   blog: {
-    title: "mung3477's blog",
+    title: "Hello world",
     description: "Hello world!",
     scheme: "system", // 'light' | 'dark' | 'system'
   },
@@ -33,7 +33,7 @@ const CONFIG = {
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "/bassethound.png", // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ["blog", "website", "frontend", "AI"]
+    keywords: ["blog", "website", "frontend", "AI"],
   },
   // notion configuration (required)
   notionConfig: {

@@ -1,8 +1,10 @@
-import useMermaidEffect from "./hooks/useMermaidEffect"
-import PostDetail from "./PostDetail"
-import PageDetail from "./PageDetail"
-import styled from "@emotion/styled"
 import usePostQuery from "src/hooks/usePostQuery"
+
+import styled from "@emotion/styled"
+
+import useMermaidEffect from "./hooks/useMermaidEffect"
+import PageDetail from "./PageDetail"
+import PostDetail from "./PostDetail"
 
 type Props = {}
 
@@ -30,6 +32,6 @@ const StyledWrapper = styled.div`
   /** Reference: https://github.com/chriskempson/tomorrow-theme **/
   code[class*="language-mermaid"],
   pre[class*="language-mermaid"] {
-    background-color: ${({ theme }) => theme.colors.gray5};
+    background-color: ${({ theme }) => theme.colors.sand5};
   }
 `

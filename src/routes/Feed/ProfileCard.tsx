@@ -1,8 +1,10 @@
-import styled from "@emotion/styled"
-import Image from "next/image"
 import React from "react"
+
+import Image from "next/image"
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
+
+import styled from "@emotion/styled"
 
 type Props = {}
 
@@ -38,7 +40,7 @@ const StyledWrapper = styled.div`
     border-radius: 1rem;
     width: 100%;
     background-color: ${({ theme }) =>
-      theme.scheme === "light" ? "white" : theme.colors.gray4};
+      theme.scheme === "light" ? "white" : theme.colors.sand4};
     @media (min-width: 768px) {
       padding: 1rem;
     }
@@ -69,7 +71,7 @@ const StyledWrapper = styled.div`
         margin-bottom: 1rem;
         font-size: 0.875rem;
         line-height: 1.25rem;
-        color: ${({ theme }) => theme.colors.gray11};
+        color: ${({ theme }) => theme.colors.sand11};
       }
       .bio {
         margin-bottom: 0.5rem;

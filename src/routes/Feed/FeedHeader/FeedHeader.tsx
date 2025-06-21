@@ -1,8 +1,9 @@
-import { TCategories } from "src/types"
 import React from "react"
+
+import styled from "@emotion/styled"
+
 import CategorySelect from "./CategorySelect"
 import OrderButtons from "./OrderButtons"
-import styled from "@emotion/styled"
 
 type Props = {}
 
@@ -22,5 +23,5 @@ const StyledWrapper = styled.div`
   margin-bottom: 1rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.gray6};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.sand6};
 `
