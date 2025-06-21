@@ -1,9 +1,12 @@
-import { CONFIG } from "site.config"
-import { ReactCusdis } from "react-cusdis"
-import { useCallback, useEffect, useState } from "react"
-import styled from "@emotion/styled"
+import {
+  useCallback,
+  useEffect,
+  useState,
+} from "react"
+
 import useScheme from "src/hooks/useScheme"
-import { useRouter } from "next/router"
+
+import styled from "@emotion/styled"
 
 type Props = {
   id: string
@@ -40,6 +43,7 @@ const Cusdis: React.FC<Props> = ({ id, slug, title }) => {
   return (
     <>
       <StyledWrapper id="comments">
+        {/**
         <ReactCusdis
           key={value}
           attrs={{
@@ -51,6 +55,7 @@ const Cusdis: React.FC<Props> = ({ id, slug, title }) => {
             theme: scheme,
           }}
         />
+         */}
       </StyledWrapper>
     </>
   )
