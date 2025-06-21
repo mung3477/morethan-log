@@ -30,6 +30,7 @@ const StyledWrapper = styled.div`
   z-index: ${zIndexes.header};
   position: sticky;
   top: 0;
+  background-color: ${({ theme }) => theme.colors.sand1};
 
   .container {
     display: flex;
