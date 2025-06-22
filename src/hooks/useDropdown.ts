@@ -1,4 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, {
+  useRef,
+  useState,
+} from "react"
 
 type useDropdownType = () => [
   React.RefObject<HTMLDivElement>,
@@ -7,7 +10,7 @@ type useDropdownType = () => [
 ]
 
 function assertIsNode(e: EventTarget | null): asserts e is Node {
-  if (!e || !('nodeType' in e)) {
+  if (!e || !("nodeType" in e)) {
     throw new Error(`Node expected`)
   }
 }
@@ -19,6 +22,7 @@ const useDropdown: useDropdownType = () => {
   const handleClick: (this: Window, e: MouseEvent) => void = (e) => {
     if (!menuRef.current) return
     assertIsNode(e.target)
+
     if (menuRef.current.contains(e.target) === false) {
       setIsDropdownOpened(false)
     }
@@ -26,7 +30,7 @@ const useDropdown: useDropdownType = () => {
 
   const onOpenBtn = () => {
     setIsDropdownOpened(true)
-    window.addEventListener('click', handleClick)
+    window.addEventListener("click", handleClick)
   }
 
   return [menuRef, isDropdownOpened, onOpenBtn]

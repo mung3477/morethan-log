@@ -1,7 +1,6 @@
 import React from "react"
 
 import { useRouter } from "next/router"
-import { Emoji } from "src/components/Emoji"
 import { useTagsQuery } from "src/hooks/useTagsQuery"
 
 import styled from "@emotion/styled"
@@ -36,9 +35,7 @@ const TagList: React.FC<Props> = () => {
 
   return (
     <StyledWrapper>
-      <div className="top">
-        <Emoji>🏷️</Emoji> Tags
-      </div>
+      <div className="top">Tags</div>
       <div className="list">
         {Object.keys(data).map((key) => (
           <a
@@ -59,8 +56,11 @@ export default TagList
 const StyledWrapper = styled.div`
   .top {
     display: none;
-    padding: 0.25rem;
-    margin-bottom: 0.75rem;
+    padding: 0 0.25rem;
+    margin-bottom: 0.5rem;
+
+    font-weight: 700;
+    font-size: 1.25rem;
 
     @media (min-width: 1024px) {
       display: block;
@@ -99,15 +99,19 @@ const StyledWrapper = styled.div`
       cursor: pointer;
 
       :hover {
-        background-color: ${({ theme }) => theme.colors.sand4};
+        // background-color: ${({ theme }) => theme.colors.sand4};
+        text-decoration: underline;
       }
       &[data-active="true"] {
         color: ${({ theme }) => theme.colors.sand12};
-        background-color: ${({ theme }) => theme.colors.sand4};
+        // background-color: ${({ theme }) => theme.colors.sand4};
+        text-decoration: underline;
 
-        :hover {
-          background-color: ${({ theme }) => theme.colors.sand4};
-        }
+        /**
+          :hover {
+            background-color: ${({ theme }) => theme.colors.sand4};
+          }
+        */
       }
     }
   }

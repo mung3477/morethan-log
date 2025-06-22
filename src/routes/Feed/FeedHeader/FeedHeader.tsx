@@ -20,8 +20,9 @@ export default FeedHeader
 
 const StyledWrapper = styled.div`
   display: flex;
+  position: relative;
   margin-bottom: 1rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.sand6};
+  // border-bottom: 1px solid ${({ theme }) => theme.colors.sand6};
 `

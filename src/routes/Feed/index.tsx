@@ -13,7 +13,7 @@ import SearchInput from "./SearchInput"
 import ServiceCard from "./ServiceCard"
 import TagList from "./TagList"
 
-const HEADER_HEIGHT = 73
+const HEADER_HEIGHT = 104
 
 type Props = {}
 
@@ -28,13 +28,14 @@ const Feed: React.FC<Props> = () => {
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       >
+        <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
         <TagList />
       </div>
       <div className="mid">
         <MobileProfileCard />
         <PinnedPosts q={q} />
-        <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
         <div className="tags">
+          <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
           <TagList />
         </div>
         <FeedHeader />
@@ -64,8 +65,6 @@ export default Feed
 
 const StyledWrapper = styled.div`
   grid-template-columns: repeat(12, minmax(0, 1fr));
-
-  padding: 2rem 0;
   display: grid;
   gap: 1.5rem;
 
@@ -79,7 +78,7 @@ const StyledWrapper = styled.div`
     overflow: scroll;
     position: sticky;
     grid-column: span 2 / span 2;
-    top: ${HEADER_HEIGHT - 10}px;
+    top: ${HEADER_HEIGHT}px;
 
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -101,6 +100,7 @@ const StyledWrapper = styled.div`
 
     > .tags {
       display: block;
+      margin: 2rem 0;
 
       @media (min-width: 1024px) {
         display: none;
