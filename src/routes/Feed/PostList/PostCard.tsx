@@ -93,6 +93,9 @@ const StyledWrapper = styled(Link)`
       width: 100%;
       background-color: ${({ theme }) => theme.colors.sand2};
       padding-bottom: 66%;
+      border-top-right-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      overflow: hidden;
 
       @media (min-width: 1024px) {
         padding-bottom: 50%;
@@ -149,6 +152,7 @@ const StyledWrapper = styled(Link)`
         p {
           display: none;
           line-height: 1.5rem;
+          font-weight: 300;
           margin: 0;
           @media (min-width: 768px) {
             display: block;

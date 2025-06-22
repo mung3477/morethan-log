@@ -2,7 +2,6 @@ import React from "react"
 
 import Image from "next/image"
 import { CONFIG } from "site.config"
-import { Emoji } from "src/components/Emoji"
 
 import styled from "@emotion/styled"
 
@@ -11,9 +10,7 @@ type Props = {}
 const ProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
-      <div className="title">
-        <Emoji>💻</Emoji> Profile
-      </div>
+      <div className="title">Profile</div>
       <div className="content">
         <div className="top">
           <Image src={CONFIG.profile.image} fill alt="" />
@@ -21,7 +18,7 @@ const ProfileCard: React.FC<Props> = () => {
         <div className="mid">
           <div className=" name">{CONFIG.profile.name}</div>
           <div className="role">{CONFIG.profile.role}</div>
-          <div className="text-sm mb-2">{CONFIG.profile.bio}</div>
+          <div className="bio">{CONFIG.profile.bio}</div>
         </div>
       </div>
     </StyledWrapper>
@@ -34,22 +31,26 @@ const StyledWrapper = styled.div`
   > .title {
     padding: 0.25rem;
     margin-bottom: 0.75rem;
+
+    font-weight: 700;
+    font-size: 1.25rem;
+
+    @media (max-width: 1024px) {
+      font-size: 1.75rem;
+    }
   }
   > .content {
     margin-bottom: 2.25rem;
     border-radius: 1rem;
     width: 100%;
-    background-color: ${({ theme }) =>
-      theme.scheme === "light" ? "white" : theme.colors.sand4};
-    @media (min-width: 768px) {
-      padding: 1rem;
-    }
-    @media (min-width: 1024px) {
-      padding: 1rem;
-    }
+
     .top {
       position: relative;
       width: 100%;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin-bottom: 1rem;
+
       &:after {
         content: "";
         display: block;
@@ -58,24 +59,23 @@ const StyledWrapper = styled.div`
     }
     .mid {
       display: flex;
-      padding: 0.5rem;
       flex-direction: column;
-      align-items: center;
+
       .name {
         font-size: 1.25rem;
         line-height: 1.75rem;
-        font-style: italic;
-        font-weight: 700;
       }
       .role {
         margin-bottom: 1rem;
         font-size: 0.875rem;
+        font-weight: 300;
         line-height: 1.25rem;
         color: ${({ theme }) => theme.colors.sand11};
       }
       .bio {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.375rem;
         font-size: 0.875rem;
+        font-weight: 300;
         line-height: 1.25rem;
       }
     }
