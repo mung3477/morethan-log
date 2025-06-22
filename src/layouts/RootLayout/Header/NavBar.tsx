@@ -3,8 +3,8 @@ import Link from "next/link"
 import styled from "@emotion/styled"
 
 const NavBar: React.FC = () => {
-  // const links = [{ id: 1, name: "About", to: "/about" }]
-  const links: Link[] = []
+  const links = [{ id: 1, name: "About", to: "/about" }]
+  // const links: Link[] = []
   return (
     <StyledWrapper className="">
       <ul>
@@ -34,7 +34,16 @@ const StyledWrapper = styled.div`
     li {
       display: block;
       margin-left: 1rem;
-      color: ${({ theme }) => theme.colors.sand11};
+      font-weight: 200;
+      font-size: 18px;
+
+      :hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 `

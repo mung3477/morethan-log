@@ -16,8 +16,8 @@ const Header: React.FC<Props> = ({ fullWidth }) => {
       <div data-full-width={fullWidth} className="container">
         <Logo />
         <div className="nav">
-          <ThemeToggle />
           <NavBar />
+          <ThemeToggle />
         </div>
       </div>
     </StyledWrapper>
@@ -52,6 +52,7 @@ const StyledWrapper = styled.div`
       display: flex;
       gap: 0.75rem;
       align-items: center;
+      justify-content: space-between;
     }
   }
 `

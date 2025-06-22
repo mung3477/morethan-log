@@ -22,8 +22,8 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "Hello world",
-    description: "Hello world!",
+    title: "Blog",
+    description: "Just a blog",
     scheme: "system", // 'light' | 'dark' | 'system'
   },
 
