@@ -1,4 +1,3 @@
-import "prismjs"
 import "prismjs/components/prism-bash.js"
 import "prismjs/components/prism-c.js"
 import "prismjs/components/prism-coffeescript.js"
@@ -37,6 +36,7 @@ import {
   useEffect,
 } from "react"
 
+import Prism from "prismjs"
 import useScheme from "src/hooks/useScheme"
 import Scripts from "src/layouts/RootLayout/Scripts"
 
