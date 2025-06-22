@@ -29,8 +29,7 @@ export default ProfileCard
 
 const StyledWrapper = styled.div`
   > .title {
-    padding: 0.25rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 
     font-weight: 700;
     font-size: 1.25rem;

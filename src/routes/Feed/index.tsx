@@ -10,7 +10,6 @@ import PostList from "./PostList"
 import PinnedPosts from "./PostList/PinnedPosts"
 import ProfileCard from "./ProfileCard"
 import SearchInput from "./SearchInput"
-import ServiceCard from "./ServiceCard"
 import TagList from "./TagList"
 
 const HEADER_HEIGHT = 104
@@ -51,7 +50,7 @@ const Feed: React.FC<Props> = () => {
         }}
       >
         <ProfileCard />
-        <ServiceCard />
+        {/** <ServiceCard / > */}
         <ContactCard />
         <div className="footer">
           <Footer />

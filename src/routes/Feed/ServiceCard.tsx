@@ -1,8 +1,6 @@
 import React from "react"
 
-import { AiFillCodeSandboxCircle } from "react-icons/ai"
 import { CONFIG } from "site.config"
-import { Emoji } from "src/components/Emoji"
 
 import styled from "@emotion/styled"
 
@@ -10,9 +8,7 @@ const ServiceCard: React.FC = () => {
   if (!CONFIG.projects) return null
   return (
     <>
-      <StyledTitle>
-        <Emoji>🌟</Emoji> Service
-      </StyledTitle>
+      <StyledTitle>Service</StyledTitle>
       <StyledWrapper>
         {CONFIG.projects.map((project, idx) => (
           <a
@@ -21,7 +17,6 @@ const ServiceCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <AiFillCodeSandboxCircle className="icon" />
             <div className="name">{project.name}</div>
           </a>
         ))}
@@ -33,22 +28,19 @@ const ServiceCard: React.FC = () => {
 export default ServiceCard
 
 const StyledTitle = styled.div`
-  padding: 0.25rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 `
 
 const StyledWrapper = styled.div`
   display: flex;
-  padding: 0.25rem;
   margin-bottom: 2.25rem;
   flex-direction: column;
   border-radius: 1rem;
-  background-color: ${({ theme }) =>
-    theme.scheme === "light" ? "white" : theme.colors.sand4};
+
   > a {
     display: flex;
-    padding: 0.75rem;
-    gap: 0.75rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
     align-items: center;
     border-radius: 1rem;
     color: ${({ theme }) => theme.colors.sand11};
@@ -56,7 +48,7 @@ const StyledWrapper = styled.div`
 
     :hover {
       color: ${({ theme }) => theme.colors.sand12};
-      background-color: ${({ theme }) => theme.colors.sand5};
+      text-decoration: underline;
     }
     .icon {
       font-size: 1.5rem;
