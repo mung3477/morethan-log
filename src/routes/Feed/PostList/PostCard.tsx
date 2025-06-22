@@ -72,9 +72,7 @@ const StyledWrapper = styled(Link)`
     overflow: hidden;
     position: relative;
     margin-bottom: 1.5rem;
-    border-radius: 1rem;
-    background-color: ${({ theme }) =>
-      theme.scheme === "light" ? "white" : theme.colors.sand4};
+
     transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
@@ -83,10 +81,6 @@ const StyledWrapper = styled(Link)`
       margin-bottom: 2rem;
     }
 
-    :hover {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
     > .category {
       position: absolute;
       top: 1rem;
@@ -105,7 +99,7 @@ const StyledWrapper = styled(Link)`
       }
     }
     > .content {
-      padding: 1rem;
+      padding: 1rem 0;
 
       &[data-thumb="false"] {
         padding-top: 3.5rem;
@@ -123,26 +117,26 @@ const StyledWrapper = styled(Link)`
           align-items: baseline;
         }
         h2 {
-          margin-bottom: 0.5rem;
-          font-size: 1.125rem;
+          margin-bottom: 0.375rem;
+          font-size: 1.75rem;
           line-height: 1.75rem;
-          font-weight: 500;
+          font-weight: 700;
 
           cursor: pointer;
 
-          @media (min-width: 768px) {
-            font-size: 1.25rem;
-            line-height: 1.75rem;
+          :hover {
+            text-decoration: underline;
           }
         }
       }
       > .date {
         display: flex;
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
         gap: 0.5rem;
         align-items: center;
         .content {
           font-size: 0.875rem;
+          font-weight: 300;
           line-height: 1.25rem;
           color: ${({ theme }) => theme.colors.sand10};
           @media (min-width: 768px) {
@@ -151,12 +145,11 @@ const StyledWrapper = styled(Link)`
         }
       }
       > .summary {
-        margin-bottom: 1rem;
+        margin-bottom: 0.375rem;
         p {
           display: none;
-          line-height: 2rem;
-          color: ${({ theme }) => theme.colors.sand11};
-
+          line-height: 1.5rem;
+          margin: 0;
           @media (min-width: 768px) {
             display: block;
           }
@@ -164,7 +157,7 @@ const StyledWrapper = styled(Link)`
       }
       > .tags {
         display: flex;
-        gap: 0.5rem;
+        gap: 0.375rem;
       }
     }
   }

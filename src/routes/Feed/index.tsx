@@ -66,7 +66,7 @@ export default Feed
 const StyledWrapper = styled.div`
   grid-template-columns: repeat(12, minmax(0, 1fr));
   display: grid;
-  gap: 1.5rem;
+  gap: 3rem;
 
   @media (max-width: 768px) {
     display: block;

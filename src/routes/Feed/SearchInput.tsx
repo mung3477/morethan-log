@@ -27,6 +27,10 @@ const StyledWrapper = styled.div`
     margin-bottom: 0.5rem;
     font-weight: 700;
     font-size: 1.25rem;
+
+    @media (max-width: 1024px) {
+      font-size: 1.75rem;
+    }
   }
   > .mid {
     padding: 0.5rem 0.25rem;

@@ -1,8 +1,11 @@
-import { useRouter } from "next/router"
 import React from "react"
-import { COLOR_SET } from "./constants"
-import styled from "@emotion/styled"
+
+import { useRouter } from "next/router"
 import { colors } from "src/styles"
+
+import styled from "@emotion/styled"
+
+import { COLOR_SET } from "./constants"
 
 export const getColorClassByName = (name: string): string => {
   try {
@@ -49,10 +52,10 @@ const StyledWrapper = styled.div`
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   width: fit-content;
   font-size: 0.875rem;
+  font-weight: 300;
   line-height: 1.25rem;
-  opacity: 0.9;
-  color: ${colors.dark.gray1};
+  color: ${colors.dark.sand1};
 `

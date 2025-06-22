@@ -45,14 +45,13 @@ const StyledWrapper = styled.div`
   display: flex;
   gap: 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   a {
     cursor: pointer;
     color: ${({ theme }) => theme.colors.sand10};
 
     &[data-active="true"] {
-      font-weight: 700;
-
+      text-decoration: underline;
       color: ${({ theme }) => theme.colors.sand12};
     }
   }

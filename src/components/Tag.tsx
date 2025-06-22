@@ -28,11 +28,11 @@ const StyledWrapper = styled.div`
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.sand10};
-  background-color: ${({ theme }) => theme.colors.sand5};
+  border: 1px solid ${({ theme }) => theme.colors.sand4};
   cursor: pointer;
 `
