@@ -1,9 +1,9 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "mung3477",
+    name: "Woosung Joung",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer & AI researcher",
+    role: "AI researcher / Former frontend developer",
     bio: "I like immediate visual feedbacks.",
     email: "mung3477@korea.ac.kr",
     linkedin: "woosung-joung-1187bb277",
@@ -18,6 +18,10 @@ const CONFIG = {
     {
       name: "FLAMEL",
       href: "https://flamel.app/",
+    },
+    {
+      name: "Similar pokemon",
+      href: "https://similar-pokemon.vercel.app/",
     },
   ],
   // blog setting (required)
