@@ -1,19 +1,13 @@
+import "katex/dist/katex.min.css"
+
+import { FC } from "react"
+
 import dynamic from "next/dynamic"
 import Image from "next/image"
 import Link from "next/link"
 import { ExtendedRecordMap } from "notion-types"
 import useScheme from "src/hooks/useScheme"
 
-// core styles shared by all of react-notion-x (required)
-import "react-notion-x/src/styles.css"
-
-// used for code syntax highlighting (optional)
-import "prismjs/themes/prism-tomorrow.css"
-
-// used for rendering equations (optional)
-
-import "katex/dist/katex.min.css"
-import { FC } from "react"
 import styled from "@emotion/styled"
 
 const _NotionRenderer = dynamic(
@@ -79,6 +73,10 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
 export default NotionRenderer
 
 const StyledWrapper = styled.div`
+  .notion {
+    font-family: inherit;
+  }
+
   /* // TODO: why render? */
   .notion-collection-page-properties {
     display: none !important;

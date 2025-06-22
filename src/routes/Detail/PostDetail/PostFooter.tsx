@@ -23,7 +23,7 @@ export default Footer
 const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  font-weight: 500;
+  font-weight: 300;
   color: ${({ theme }) => theme.colors.sand10};
   a {
     margin-top: 0.5rem;
