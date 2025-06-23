@@ -109,10 +109,23 @@ const StyledWrapper = styled.button`
     }
 
     li {
+      position: relative;
+      padding: 0 1rem;
       margin-bottom: 0.375rem;
       font-size: 0.875rem;
       font-weight: 300;
       line-height: 1.25rem;
+
+      :before {
+        content: "";
+        position: absolute;
+        top: 0.5rem;
+        left: 5px;
+        width: 2px;
+        height: 2px;
+        border-radius: 100%;
+        background-color: ${({ theme }) => theme.colors.sand12};
+      }
     }
   }
 `
