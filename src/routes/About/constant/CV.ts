@@ -152,10 +152,10 @@ const projects: TItem[] = [
     title: "Topic Modeling for Beauty Product Reviews ",
     term: "Fall 2023",
     institution: "COSE362 (Machine Learning) Coursework",
-    role: "Team Member",
+    role: "Team Project",
     description: [
-      "Deployed a content based image retrieval(CBIR) service that finds a pokemon which is similar with the given image. Focused on efficient model loading and preprocessing image embeddings to enhance UX.",
-      "Utilized DINOv2 and CLIP embeddings to capture both coarse structures and fine-grained details. Implemented vector search with FAISS.",
+      "Proposed a pipeline for extracting keywords from reviews about beauty products using clustering and LDA.",
+      "Successfully clustered sentence embeddings using the HDBSCAN algorithm.",
     ],
   },
   {

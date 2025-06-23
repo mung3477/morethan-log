@@ -1,6 +1,9 @@
 import styled from "@emotion/styled"
+import Image from "next/image"
 import React from "react"
 import { bio, news } from "../constant/information"
+
+import { CONFIG } from "site.config"
 
 type Props = {}
 
@@ -9,7 +12,18 @@ const Information: React.FC<Props> = () => {
     <StyledWrapper>
       <div className="bio">
         <h2>Introduction</h2>
-        <p>{bio}</p>
+        <div className="wrapper">
+          <div className="profile-image">
+            <Image
+              src={CONFIG.profile.realImage}
+              fill
+              objectFit="contain"
+              style={{ float: "left" }}
+              alt=""
+            />
+          </div>
+          <p>{bio}</p>
+        </div>
       </div>
       <div className="news">
         <h2>News</h2>
@@ -39,13 +53,27 @@ const StyledWrapper = styled.div`
   }
 
   > .bio {
-    p {
-      margin: 0;
-      white-space: break-spaces;
-    }
-
     @media (max-width: 1024px) {
       margin-bottom: 2.5rem;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+      gap: 1rem;
+
+      .profile-image {
+        position: relative;
+        grid-column: span 3 / span 3;
+        aspect-ratio: 1920 / 2083;
+      }
+
+      p {
+        grid-column: span 7 / span 7;
+        margin: 0;
+        white-space: break-spaces;
+        font-weight: 300;
+      }
     }
   }
 
@@ -64,6 +92,7 @@ const StyledWrapper = styled.div`
     .news-summary {
       margin: 0;
       grid-column: span 3 / span 3;
+      font-weight: 300;
     }
   }
 `
