@@ -10,6 +10,8 @@ type Props = {
   fullWidth: boolean
 }
 
+const HEADER_HEIGHT = 104
+
 const Header: React.FC<Props> = ({ fullWidth }) => {
   return (
     <StyledWrapper>
@@ -25,6 +27,8 @@ const Header: React.FC<Props> = ({ fullWidth }) => {
 }
 
 export default Header
+
+export { HEADER_HEIGHT }
 
 const StyledWrapper = styled.div`
   z-index: ${zIndexes.header};

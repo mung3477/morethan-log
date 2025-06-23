@@ -12,7 +12,7 @@ import ProfileCard from "./ProfileCard"
 import SearchInput from "./SearchInput"
 import TagList from "./TagList"
 
-const HEADER_HEIGHT = 104
+import { HEADER_HEIGHT } from "src/layouts/RootLayout/Header"
 
 type Props = {}
 
