@@ -72,6 +72,6 @@ const StyledMain = styled.main`
   margin: 0 auto;
   width: 100%;
   max-width: 1120px;
-  padding: 0 1rem;
+  padding: 0 1rem 3rem;
   background-color: ${({ theme }) => theme.colors.sand1};
 `
