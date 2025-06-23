@@ -15,7 +15,7 @@ const ThemeToggle: React.FC<Props> = () => {
 
   return (
     <StyledWrapper onClick={handleClick}>
-      {scheme === "light" ? ": Light" : ": Dark"}
+      {scheme === "light" ? ": Light :" : ": Dark :"}
     </StyledWrapper>
   )
 }
