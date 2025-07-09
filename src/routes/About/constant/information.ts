@@ -5,7 +5,7 @@ interface TNews {
 }
 
 const bio =
-  "Thank you for coming!\r\nI am a Newbie AI Researcher / former frontend developer,\r\nand also a relentless questioner.\r\nI want to visually understand the world!"
+  "Thank you for coming!\r\nI am a Newbie AI Researcher / former frontend developer,\r\nand also a relentless questioner.\r\nI am interested in scalable and controllable generative models."
 
 const news: TNews[] = [
   {

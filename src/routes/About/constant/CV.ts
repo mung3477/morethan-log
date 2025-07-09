@@ -41,7 +41,8 @@ const workExperiences: TItem[] = [
     term: "Sep 2024 - Current",
     role: "Research Intern",
     description: [
-      "Researched about a training-free enhancement to ControlNet that enables robust generation under loosely aligned visual conditions",
+      "Developed and evaluated a training-free enhancement to ControlNet, improving robustness of generative models under loosely aligned visual conditions; results submitted to BMVC 2025.",
+      "Collaborating with graduate students to develop scalable methods for autonomous driving dataset augmentation.",
     ],
   },
   {
@@ -51,10 +52,8 @@ const workExperiences: TItem[] = [
     term: "May 2023 - Jan 2025",
     role: "Frontend developer",
     description: [
-      "Developed website for Flamel, an AI image generation service, using React and Typescript.",
-      "Implemented overall components, keyboard shortcuts, transitions and responsive designs as the team’s only frontend developer, resulting in over 2,500 users and 100 compliments on intuitive UX.",
-      "Set up a pipeline to translate the website based on user preferences using Google Sheet and I18n module, reducing redundant communications between product managers and developers.",
-      "Improved on-page SEO with meta tags and semantic markups.",
+      "Led frontend development for Flamel, an AI image generation platform; implemented core UI components and advanced keyboard shortcuts, supporting 2,500+ users and receiving 100+ positive UX reviews.",
+      "Designed and automated a localization pipeline using Google Sheets and I18n, streamlining communication between product and engineering teams.",
     ],
   },
   {
@@ -64,7 +63,7 @@ const workExperiences: TItem[] = [
     term: "Jul 2022 - Apr 2023",
     role: "Frontend developer, Founding engineer",
     description: [
-      "Developed website for Sigmate, a write-to-earn NFT Wiki service, focusing on SEO with SSR using NextJS.",
+      "Founding engineer for Sigmate, a write-to-earn NFT Wiki platform; developed scalable server-side rendering architecture with NextJS to optimize SEO and performance.",
     ],
   },
 ]
@@ -111,8 +110,9 @@ const projects: TItem[] = [
     institution: "AIKU (Deep Learning Student Club of KU)",
     role: "Team Lead",
     description: [
-      "Deployed a content based image retrieval(CBIR) service that finds a pokemon which is similar with the given image. Focused on efficient model loading and preprocessing image embeddings to enhance UX.",
-      "Utilized DINOv2 and CLIP embeddings to capture both coarse structures and fine-grained details. Implemented vector search with FAISS.",
+      "Designed and deployed a content-based image retrieval system that identifies visually similar Pokémon characters from user-uploaded images.",
+      "Engineered efficient model loading and embedding preprocessing pipelines, reducing latency and improving scalability.",
+      "Integrated DINOv2 and CLIP for hierarchical feature extraction; implemented high-performance vector search with FAISS.",
     ],
   },
   {
@@ -122,8 +122,8 @@ const projects: TItem[] = [
     institution: "AIKU (Deep Learning Student Club of KU)",
     role: "Team Lead",
     description: [
-      "Using synthetic conversation data created with Gemini API, we conducted QLoRA on a pretrained LLaMa3-7B to enable an LLM to portray a persona of certain anime character.",
-      "Deployed a demo using Modal labs and Vercel.",
+      "Led the fine-tuning of LLaMa3-7B using synthetic conversation data generated via the Gemini API, enabling the model to emulate a specific anime character persona through QLoRA.",
+      "Deployed an interactive demo on Modal Labs and Vercel, demonstrating real-time persona-driven dialogue generation.",
     ],
   },
   {
@@ -133,8 +133,9 @@ const projects: TItem[] = [
     institution: "AIKU (Deep Learning Student Club of KU)",
     role: "Team Lead",
     description: [
-      "Proposed and implemented a pipeline to predict bitcoin prices using tabular chart data and bitcoin related articles on social media, with transformer encoders and pretrained BERTs respectively.",
-      "Used Pytorch to preprocess and utilize chart data and construct the overall pipeline.",
+      "Developed a multi-modal prediction pipeline for bitcoin prices, integrating tabular chart data and social media articles.",
+      "Employed transformer encoders for time-series analysis and fine-tuned BERT models for sentiment extraction from text.",
+      "Built and orchestrated the entire pipeline in PyTorch, enabling end-to-end data preprocessing, feature extraction, and prediction.",
     ],
   },
   {
@@ -144,7 +145,7 @@ const projects: TItem[] = [
     institution: "COSE474 (Deep Learning) Coursework",
     role: "Solo Work",
     description: [
-      "Proposed a hypothesis that initializing a GAN with a pretrained discriminator might improve the image generation quality.",
+      "Investigated the impact of initializing GANs with pretrained discriminators on image generation quality.",
     ],
   },
   {
@@ -154,8 +155,7 @@ const projects: TItem[] = [
     institution: "COSE362 (Machine Learning) Coursework",
     role: "Team Project",
     description: [
-      "Proposed a pipeline for extracting keywords from reviews about beauty products using clustering and LDA.",
-      "Successfully clustered sentence embeddings using the HDBSCAN algorithm.",
+      "Developed a keyword extraction pipeline for beauty product reviews, combining sentence embedding clustering (HDBSCAN) with Latent Dirichlet Allocation (LDA) for topic modeling.",
     ],
   },
   {
@@ -165,7 +165,8 @@ const projects: TItem[] = [
     institution: "Team ARA",
     role: "Desktop App & Web Page Developer",
     description: [
-      "Developed desktop application for ARA, a service that enables airdrop and universal clipboard regardless of the OS, using Electron, Firebase, webRTC and Svelte.",
+      "Engineered a cross-platform desktop application (ARA) supporting seamless file transfer and universal clipboard across operating systems.",
+      "Utilized Electron, Firebase, WebRTC, and Svelte to ensure real-time data exchange.",
     ],
   },
 ]
