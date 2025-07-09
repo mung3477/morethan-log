@@ -1,15 +1,16 @@
 import MetaConfig from "src/components/MetaConfig"
-import About from "src/routes/About"
+import Feed from "src/routes/Feed"
+
 import { CONFIG } from "../../site.config"
 import { NextPageWithLayout } from "../types"
 
 type Props = {}
 
-const AboutPage: NextPageWithLayout<Props> = () => {
-  return <About />
+const FeedPage: NextPageWithLayout<Props> = () => {
+  return <Feed />
 }
 
-AboutPage.getLayout = (page) => {
+FeedPage.getLayout = (page) => {
   return (
     <>
       <MetaConfig
@@ -25,4 +26,4 @@ AboutPage.getLayout = (page) => {
   )
 }
 
-export default AboutPage
+export default FeedPage
