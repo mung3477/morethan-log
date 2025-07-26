@@ -4,6 +4,12 @@ import styled from "@emotion/styled"
 
 const NavBar: React.FC = () => {
   const links = [
+    {
+      id: 3,
+      name: "CV",
+      to: "https://drive.google.com/file/d/1gClNWV1qljT1N4g-NmDNF2HVLqRCSOhO/view?usp=sharing",
+      target: "_blank",
+    },
     { id: 1, name: "About", to: "/" },
     { id: 2, name: "Feed", to: "/feed" },
   ]
@@ -13,7 +19,9 @@ const NavBar: React.FC = () => {
       <ul>
         {links.map((link) => (
           <li key={link.id}>
-            <Link href={link.to}>{link.name}</Link>
+            <Link href={link.to} target={link.target || "_self"}>
+              {link.name}
+            </Link>
           </li>
         ))}
       </ul>
