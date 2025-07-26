@@ -1,6 +1,9 @@
-import styled from "@emotion/styled"
 import React, { MouseEventHandler, useState } from "react"
+
 import { AiFillCaretDown, AiFillCaretRight } from "react-icons/ai"
+
+import styled from "@emotion/styled"
+
 import type { TItem } from "../constant/CV"
 
 type Props = { item: TItem }
@@ -17,10 +20,30 @@ const CVItem: React.FC<Props> = ({ item }) => {
       <div className="top">
         <div className="basic-info">
           <div className="title-term-wrapper">
-            <h4>{item.title}</h4>
+            <h4>
+              {item.url ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {item.title}
+                </a>
+              ) : (
+                item.title
+              )}
+            </h4>
             <span className="term">{item.term}</span>
           </div>
-          <span>{item.location || item.institution}</span>
+          <span>
+            {item.location ||
+              item.institution ||
+              (item.authors && (
+                <span
+                  dangerouslySetInnerHTML={{ __html: item.authors.join(", ") }}
+                />
+              ))}
+          </span>
         </div>
       </div>
       <div className="bottom">
@@ -53,6 +76,15 @@ const StyledWrapper = styled.button`
       font-weight: 500;
       line-height: 1.75rem;
       text-wrap-style: balance;
+
+      a {
+        color: ${({ theme }) => theme.colors.sand12};
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     span {
@@ -63,17 +95,13 @@ const StyledWrapper = styled.button`
 
     .title-term-wrapper {
       display: flex;
-      align-items: center;
-
-      @media (max-width: 768px) {
-        flex-direction: column-reverse;
-        align-items: start;
-      }
+      flex-direction: column-reverse;
+      align-items: start;
     }
 
     .term {
       padding: 0.0075rem;
-      margin-left: 0.75rem;
+      margin-right: 0.75rem;
       color: ${({ theme }) => theme.colors.sand12};
       border: 1px solid ${({ theme }) => theme.colors.sand10};
 

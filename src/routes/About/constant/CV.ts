@@ -1,10 +1,12 @@
 interface TItem {
   id: string
   title: string
+  url?: string
   location?: string
+  institution?: string // honors
+  authors?: string[] // for publications
   term: string
   role?: string
-  institution?: string // scholarship, education
   description?: string[] // bullet points
 }
 
@@ -33,6 +35,22 @@ const education: TItem[] = [
   },
 ]
 
+const publications: TItem[] = [
+  {
+    id: "SemanticControl",
+    url: "https://drive.google.com/file/u/1/d/1i4nwpiztXnki2NthBg97ezfwfxh1ECQK/view?usp=sharing",
+    title:
+      "SemanticControl:\r\n A Training-Free Approach for Handling Loosely Aligned Visual Conditions in ControlNet",
+    authors: ["<b><u>Woosung Joung*</u></b>", "Daewon Chae*", "Jinkyu Kim"],
+    term: "BMVC 2025",
+    role: "First Author (Equal Contribution)",
+    description: [
+      "Addressed an important issue for ControlNet: existing ControlNet models struggle to use such loosely aligned visual conditions, often resulting in low text fidelity or visual artifacts.",
+      "Showed the effectiveness of the proposed method with extensive experimental results and visualizations",
+    ],
+  },
+]
+
 const workExperiences: TItem[] = [
   {
     id: "VAI",
@@ -49,7 +67,7 @@ const workExperiences: TItem[] = [
     id: "Smoretalk",
     title: "Smoretalk",
     location: "Seoul, Republic of Korea",
-    term: "May 2023 - Jan 2025",
+    term: "May 2023 - Aug 2024",
     role: "Frontend developer",
     description: [
       "Led frontend development for Flamel, an AI image generation platform; implemented core UI components and advanced keyboard shortcuts, supporting 2,500+ users and receiving 100+ positive UX reviews.",
@@ -178,15 +196,21 @@ const CV: TSection[] = [
     items: education,
   },
   {
-    id: "work",
-    title: "Work Experiences",
-    items: workExperiences,
+    id: "publications",
+    title: "Publications",
+    items: publications,
   },
   {
     id: "honors",
     title: "Selected Honors and Awards",
     items: honors,
   },
+  {
+    id: "work",
+    title: "Work Experiences",
+    items: workExperiences,
+  },
+
   {
     id: "projects",
     title: "Projects",
