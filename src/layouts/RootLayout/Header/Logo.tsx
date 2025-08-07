@@ -7,6 +7,7 @@ const Logo = () => {
   return (
     <StyledWrapper href="/" aria-label={CONFIG.blog.title}>
       {CONFIG.blog.title}
+      <h1 style={{ display: "none" }}>Woosung Joung</h1>
     </StyledWrapper>
   )
 }
