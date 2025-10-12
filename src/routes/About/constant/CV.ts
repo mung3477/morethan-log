@@ -49,6 +49,24 @@ const publications: TItem[] = [
       "Showed the effectiveness of the proposed method with extensive experimental results and visualizations",
     ],
   },
+  {
+    id: "Truthful-Intehitance",
+    // url: "https://mung3477.github.io/semantic-control/",
+    title:
+      "Identifying Truthful Inheritance in Family Models and Enhancing Truthfulness",
+    authors: [
+      "Miso Choi",
+      "Seonga Choi",
+      "Mincheol Kwon",
+      "<b><u>Woosung Joung</u></b>",
+      "Jinkyu Kim",
+    ],
+    term: "Under Review",
+    role: "Contributed to experiments",
+    description: [
+      "Conducted experiments on combining our intervention strategies with direct attention weight manipulation methods such as VCD, OPERA, PAI, and VisAttnSink.",
+    ],
+  },
 ]
 
 const workExperiences: TItem[] = [
