@@ -5,7 +5,11 @@ interface TNews {
 }
 
 const bio =
-  "Thank you for coming!\r\nI am a newbie AI Researcher / former frontend developer,\r\nand also a relentless questioner.\r\n\r\nMy goal is to make predictable & human-aligned generative models by understanding their behavior."
+  'Thank you for coming!\
+  \r\nI am a AI Researcher / former frontend developer,\
+  \r\nand also a relentless "why" person.\
+  \r\n\r\nMy goal is to make models truly understand what humans mean without detailed instructions.\
+  \r\nI hope to enable seamless human-AI collaboration, where people no longer adapt to the model’s limitations, but the models can infer and adapt to human intent from minimal, multimodal cues.'
 
 const news: TNews[] = [
   {

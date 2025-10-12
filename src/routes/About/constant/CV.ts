@@ -38,7 +38,7 @@ const education: TItem[] = [
 const publications: TItem[] = [
   {
     id: "SemanticControl",
-    url: "https://drive.google.com/file/u/1/d/1i4nwpiztXnki2NthBg97ezfwfxh1ECQK/view?usp=sharing",
+    url: "https://mung3477.github.io/semantic-control/",
     title:
       "SemanticControl:\r\n A Training-Free Approach for Handling Loosely Aligned Visual Conditions in ControlNet",
     authors: ["<b><u>Woosung Joung*</u></b>", "Daewon Chae*", "Jinkyu Kim"],
