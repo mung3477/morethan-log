@@ -3,9 +3,9 @@ const CONFIG = {
   profile: {
     name: "Woosung Joung",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app,
-    realImage: "/Visa_Profile.jpg",
+    realImage: "/Profile.webp",
     role: "AI researcher / Former frontend developer",
-    bio: "I like immediate visual feedbacks.",
+    bio: "I like immediate visual feedbacks.\r\nI am interested in making AI systems effective collaborators for people.",
     email: "mung3477@korea.ac.kr",
     linkedin: "woosung-joung-1187bb277",
     github: "mung3477",

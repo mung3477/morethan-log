@@ -1,9 +1,11 @@
-import styled from "@emotion/styled"
-import Image from "next/image"
 import React from "react"
-import { bio, news } from "../constant/information"
 
+import Image from "next/image"
 import { CONFIG } from "site.config"
+
+import styled from "@emotion/styled"
+
+import { bio, news } from "../constant/information"
 
 type Props = {}
 
@@ -20,6 +22,7 @@ const Information: React.FC<Props> = () => {
               objectFit="contain"
               style={{ float: "left" }}
               alt=""
+              priority
             />
           </div>
           <p>{bio}</p>
@@ -64,12 +67,12 @@ const StyledWrapper = styled.div`
 
       .profile-image {
         position: relative;
-        grid-column: span 3 / span 3;
-        aspect-ratio: 1920 / 2083;
+        grid-column: span 4 / span 4;
+        aspect-ratio: 4000 / 6000;
       }
 
       p {
-        grid-column: span 7 / span 7;
+        grid-column: span 6 / span 6;
         margin: 0;
         white-space: break-spaces;
         font-weight: 300;
