@@ -7,8 +7,9 @@ interface TNews {
 const bio =
   "Thank you for coming!\
   \r\nI am a AI Researcher / former frontend developer.\
-  \r\n\r\nMy goal is to make AI systems effective collaborators for people.\
-  \r\n\r\nI am interested in improving generative models’ generalization and developing mechanisms that give users direct controlover AI behavior. Ultimately, I aim to build systems that internalize these mechanisms and naturally infer intent."
+  \r\n\r\nI am interested in understanding how AI systems can remain robust in unfamiliar contexts, especially in vision related tasks such as image generation or robotic manipulation.\
+  \r\n\r\nI aim to avoid naive scaling of models and datasets, and instead focusing on demystifying what models know and what they don't.\
+  \r\n\r\nUltimately, I aim to build models that robustly interpret and act on user intent across diverse modalities like humans, so people can articulate goals naturally rather than adapt to the system."
 
 const news: TNews[] = [
   {
